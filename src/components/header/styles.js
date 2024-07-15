@@ -20,8 +20,8 @@ export const Menu = styled.ul`
 `
 
 export const ListItem = styled.li`
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     background-color: #e53939;
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@ export const ListItem = styled.li`
 
 export const StyledNavLink = styled(NavLink)`
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     display: flex;
     align-items: center;
     position: relative;
@@ -54,8 +54,8 @@ export const StyledNavLink = styled(NavLink)`
 export const MenuTopic = styled.span`
     position: absolute;
     right: .5rem;
-    padding: 0 3.5rem 0 1rem;
-    height: 3rem;
+    padding: 0 5rem 0 2rem;
+    height: 5rem;
     width: max-content;
     display: flex;
     align-items: center;
