@@ -16,6 +16,7 @@ export const Menu = styled.ul`
     right: 1rem;
     top: 0;
     bottom: 0;
+    z-index: 111;
 `
 
 export const ListItem = styled.li`
