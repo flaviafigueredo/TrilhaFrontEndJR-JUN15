@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import avatar from '../../assets/avatar.jpeg'
 import { Section, Avatar, InfosContainer, Btn, Span } from "./styles"
+import '../../transitions.css'
 
 export const Home = () => {
     return (

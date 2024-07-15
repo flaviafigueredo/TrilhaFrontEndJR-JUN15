@@ -1,11 +1,12 @@
+import { BrowserRouter as Router } from "react-router-dom"
 import { AppRoutes } from "./routes/Routes"
 import '../src/global-styles.css'
 
 function App() {
-   return (
-    <>
+  return (
+    <Router>
       <AppRoutes />
-    </>
+    </Router>
   )
 }
 

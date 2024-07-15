@@ -1,3 +1,5 @@
+import '../../transitions.css'
+
 export const Motivations = () => {
     return (
         <>
