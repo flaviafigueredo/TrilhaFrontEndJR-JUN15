@@ -1,24 +1,37 @@
-import { NavLink } from "react-router-dom"
+import { faRocket, faHeart, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { Container, Menu, ListItem, StyledNavLink, MenuTopic, Icon } from './styles'
 
 export const Header = () => {
     return (
-        <header>
+        <Container>
             <nav>
-                <ul>
-                    <li>
-                        <NavLink to="/">Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/sobre">Sobre</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/motivacoes">Motivações</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/gostos-pessoais">Gostos pessoais</NavLink>
-                    </li>
-                </ul>
+                <Menu>
+                    <ListItem className="selected">
+                        <StyledNavLink to="/">
+                            <MenuTopic>Home</MenuTopic>
+                            <Icon icon={faHome} />
+                        </StyledNavLink>
+                    </ListItem>
+                    <ListItem>
+                        <StyledNavLink to="/sobre">
+                            <MenuTopic>Sobre</MenuTopic>
+                            <Icon icon={faUser} />
+                        </StyledNavLink>
+                    </ListItem>
+                    <ListItem>
+                        <StyledNavLink to="/motivacoes">
+                            <MenuTopic>Motivações</MenuTopic>
+                            <Icon icon={faRocket} />
+                        </StyledNavLink>
+                    </ListItem>
+                    <ListItem>
+                        <StyledNavLink to="/gostos-pessoais">
+                            <MenuTopic>Gostos pessoais</MenuTopic>
+                            <Icon icon={faHeart} />
+                        </StyledNavLink>
+                    </ListItem>
+                </Menu>
             </nav>
-        </header>
+        </Container>
     )
 }
