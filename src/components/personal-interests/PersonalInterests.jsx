@@ -1,6 +1,7 @@
 import '../../transitions.css'
 import { BackgroundAnimation } from '../background-animation/BackgroundAnimation'
-import { Section, H1, ColorHighlight, Description, Image, Anchor } from './styles'
+import { Image, Anchor } from './styles'
+import { Section, Title, ColorHighlight, Description } from '../../global-styles'
 import photography from '../../assets/photography.jpg'
 import book from '../../assets/book.jpg'
 import dog from '../../assets/dog.jpg'
@@ -10,7 +11,7 @@ export const PersonalInterests = () => {
         <>
             <BackgroundAnimation />
             <Section>
-                <H1>Interesses <ColorHighlight>pessoais</ColorHighlight></H1>
+                <Title>Interesses <ColorHighlight>pessoais</ColorHighlight></Title>
 
                 <Description>
                     <p>

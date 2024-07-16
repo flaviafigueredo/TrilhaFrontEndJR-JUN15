@@ -1,14 +1,11 @@
+import { Section as GlobalSection } from '../../global-styles'
 import styled, { keyframes } from 'styled-components'
 import backgroundImage from '../../assets/background.jpg'
 
-export const Section = styled.section`    
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.3);
+export const HomeSection = styled(GlobalSection)`
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
 
     &::before {
         content: "";
@@ -20,12 +17,6 @@ export const Section = styled.section`
         background-position: center;
         z-index: -3;
     } 
-`
-
-export const Container = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
 `
 
 export const Avatar = styled.img`
@@ -67,7 +58,6 @@ export const Btn = styled.button`
     padding: 1rem 2rem;
     border: 1px solid #e53939;
     border-radius: 5rem;
-
     margin-top: 3rem;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

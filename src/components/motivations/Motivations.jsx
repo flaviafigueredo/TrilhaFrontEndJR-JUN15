@@ -1,18 +1,19 @@
 import '../../transitions.css'
 import { BackgroundAnimation } from '../background-animation/BackgroundAnimation'
-import avatarCodigoCert from '../../assets/boneco-codigocerto.webp'
-import { Section, H1, Image, Description, ColorHighlight } from './styles'
+import avatarCodigoCerto from '../../assets/boneco-codigocerto.webp'
+import { Image } from './styles'
+import { Section, Title, ColorHighlight, Description } from '../../global-styles'
 
 export const Motivations = () => {
     return (
         <>
             <BackgroundAnimation />
             <Section>
-                <H1>Motiv<ColorHighlight>ações</ColorHighlight></H1>
+                <Title>Motiv<ColorHighlight>ações</ColorHighlight></Title>
 
                 <Description>
                     <p>
-                        <Image src={avatarCodigoCert} alt="" />
+                        <Image src={avatarCodigoCerto} alt="" />
                         Minha motivação para participar da comunidade Código Certo Coders é profundamente alimentada pela minha paixão por <ColorHighlight>aprender, colaborar e inovar</ColorHighlight>. A Código Certo Coders, sendo uma comunidade dedicada ao aprendizado contínuo, colaboração e inovação na área de tecnologia, oferece exatamente o ambiente que procuro para <ColorHighlight>crescer profissionalmente</ColorHighlight>.
                     </p>
 

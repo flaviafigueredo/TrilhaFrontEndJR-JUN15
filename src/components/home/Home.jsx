@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 import avatar from '../../assets/avatar.jpeg'
-import { Section, Avatar, InfosContainer, Btn, Span } from "./styles"
+import { HomeSection, Avatar, InfosContainer, Btn, Span } from "./styles"
+import '../../global-styles'
 import '../../transitions.css'
 
 export const Home = () => {
     return (
         <>
-            <Section>
+            <HomeSection>
                 <Avatar src={avatar} alt="avatar image" />
 
                 <InfosContainer>
@@ -16,7 +17,7 @@ export const Home = () => {
                         <Btn>Mais sobre mim</Btn>
                     </Link>
                 </InfosContainer>
-            </Section>
+            </HomeSection>
         </>
     )
 }
