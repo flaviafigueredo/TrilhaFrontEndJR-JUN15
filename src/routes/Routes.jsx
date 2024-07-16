@@ -6,6 +6,9 @@ import { About } from '../components/about/About'
 import { Motivations } from '../components/motivations/Motivations'
 import { PersonalInterests } from '../components/personal-interests/PersonalInterests'
 
+
+import { Footer } from '../components/footer/Footer'
+
 export const AppRoutes = () => {
     const location = useLocation()
 
@@ -26,6 +29,7 @@ export const AppRoutes = () => {
                     </Routes>
                 </CSSTransition>
             </SwitchTransition>
+            <Footer />
         </>
     )
 }
