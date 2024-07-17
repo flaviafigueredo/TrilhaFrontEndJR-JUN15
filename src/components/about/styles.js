@@ -3,6 +3,10 @@ import styled from "styled-components"
 export const H2 = styled.h2`
     font-size: 3rem;
     text-transform: uppercase;
+
+    @media (max-width: 320px) {
+        font-size: 2rem;
+    }
 `
 
 export const Skills = styled.div`
@@ -17,6 +21,18 @@ export const IconContainer = styled.div`
     display: flex;
     gap: 3rem;
     font-size: 5rem;
+
+    @media (max-width: 414px) {
+        font-size: 4rem;
+        gap: 2rem;
+    }
+
+    @media (max-width: 320px) {
+        flex-wrap: wrap;
+        max-width: 15rem;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 export const Education = styled.ul`
@@ -69,6 +85,10 @@ export const H3 = styled.h3`
     font-size: 1.8rem;
     text-transform: uppercase;
     margin-left: 2rem;
+
+    @media (max-width: 320px) {
+        font-size: 1.6rem;
+    }
 `
 
 export const Span = styled.span`

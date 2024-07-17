@@ -17,6 +17,16 @@ export const HomeSection = styled(GlobalSection)`
         background-position: center;
         z-index: -3;
     } 
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @media (max-width: 240px) {
+        gap: 2rem;
+        padding: 5rem 0 10rem;
+    }
 `
 
 export const Avatar = styled.img`
@@ -24,6 +34,11 @@ export const Avatar = styled.img`
     height: 500px;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media (max-width: 500px) {
+        width: 90%;
+        height: auto;
+    }
 `
 
 export const InfosContainer = styled.div`
@@ -31,6 +46,18 @@ export const InfosContainer = styled.div`
     max-width: 50rem;
     text-transform: uppercase;
     font-size: 2rem;
+
+    @media (max-width: 414px) {        
+        font-size: 1.6rem;
+    }
+
+    @media (max-width: 393px) {
+        font-size: 120%;
+    }
+
+    @media (max-width: 320px) {
+        font-size: 90%;
+    }
 `
 
 export const Animation = keyframes`
@@ -67,7 +94,13 @@ export const Btn = styled.button`
         -webkit-animation: ${Animation} 0.8s ease-in-out infinite both;
         animation: ${Animation} 0.8s ease-in-out infinite both;
         background-color: #e53939;
-  }
+    }
+
+    @media (max-width: 240px) {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        padding: .5rem 1rem;
+    }
 `
 
 export const Typing = keyframes`

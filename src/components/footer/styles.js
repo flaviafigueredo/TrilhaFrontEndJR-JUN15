@@ -37,9 +37,21 @@ export const SocialLink = styled.a`
         background-color: #000;
         color: #e53939;
     }
+
+    @media (max-width: 240px) {
+        font-size: 1.6rem;
+        width: 3rem;
+        height: 3rem;
+    }
 `
 
 export const FooterText = styled.p`
     font-size: 1.5rem;
     color: #fff;
+
+    @media (max-width: 240px) {
+        font-size: 1.2rem;
+        text-align: center;
+        max-width: 13rem;
+    }
 `

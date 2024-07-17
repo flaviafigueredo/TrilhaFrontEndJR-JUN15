@@ -6,6 +6,13 @@ export const Image = styled.img`
     width: 30rem;
     height: 100%;
     border-radius: 1rem;
+
+    @media (max-width: 414px) {
+        float: none;
+        order: 1;
+        margin: 1rem 0 0;
+        width: 100%;
+    }
 `
 
 export const Anchor = styled.a`
@@ -14,5 +21,13 @@ export const Anchor = styled.a`
 
     &:hover {
         font-weight: 700;
+    }
+`
+
+export const P = styled.p`
+    @media (max-width: 414px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 `
