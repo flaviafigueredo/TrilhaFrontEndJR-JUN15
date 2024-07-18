@@ -44,7 +44,7 @@ export const Section = styled.section`
         max-width: 60rem;
     }
 
-    @media (max-width: 414px) {
+    @media (max-width: 600px) {
         max-width: calc(100% - 40px);
     }
 `
