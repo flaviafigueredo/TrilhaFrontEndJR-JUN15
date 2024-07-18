@@ -4,9 +4,23 @@ import styled from "styled-components"
 
 export const Container = styled.header`
     position: relative;
+
+    .mobile-menu {
+        display: none;
+    }
+
+    @media (max-width: 600px) {
+        .desktop-menu {
+            display: none;
+        }
+
+        .mobile-menu {
+            display: block;
+        }
+    }
 `
 
-export const Menu = styled.ul`
+export const MenuList = styled.ul`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,3 +84,58 @@ export const MenuTopic = styled.span`
 export const Icon = styled(FontAwesomeIcon)`
     padding: 1rem;
 `
+
+export const BurgerMenuStyles = {
+    bmBurgerButton: {
+        position: 'fixed',
+        width: '30px',
+        height: '20px',
+        right: '20px',
+        top: '36px'
+    },
+
+    bmBurgerBars: {
+        background: '#e53939'
+    },
+
+    bmCrossButton: {
+        height: '40px',
+        width: '40px'
+    },
+
+    bmCross: {
+        background: '#e53939',
+        height: '20px'
+    },
+
+    bmMenuWrap: {
+        position: 'fixed',
+        height: '100%',
+        width: '80%'
+    },
+
+    bmMenu: {
+        background: '#000',
+        padding: '2.5em 1.5em 0',
+        fontSize: '1.15em'
+    },
+
+    bmMorphShape: {
+        fill: '#000'
+    },
+
+    bmItemList: {
+        color: '#000',
+        padding: '0.8em'
+    },
+
+    bmItem: {
+        display: 'block',
+        color: '#fff',
+        padding: '1rem 0'
+    },
+
+    bmOverlay: {
+        background: 'rgba(0, 0, 0, 0.3)'
+    }
+}
