@@ -35,8 +35,8 @@ Este projeto foi criado com o intuito de me apresentar, compartilhar um pouco so
 
 ## Links
 
-- [Código]()
-- [Deploy]()
+- [Código](https://github.com/flaviafigueredo/TrilhaFrontEndJR-JUN15)
+- [Deploy](https://trilha-front-end-jr-jun-15-pearl.vercel.app/)
 
 ## Tecnologias Utilizadas:
 - **React**: Utilizado como biblioteca principal para o desenvolvimento da interface do usuário.
