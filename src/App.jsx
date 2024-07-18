@@ -1,5 +1,5 @@
-import { BrowserRouter as Router } from "react-router-dom"
-import { AppRoutes } from "./routes/Routes"
+import { BrowserRouter as Router } from 'react-router-dom'
+import { AppRoutes } from './routes/Routes'
 import { GlobalStyle } from '../src/global-styles'
 
 function App() {

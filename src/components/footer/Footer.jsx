@@ -1,7 +1,6 @@
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import { FooterContainer, FooterText, SocialLink, Socials } from './styles'
 
 export const Footer = () => {
