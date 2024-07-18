@@ -91,7 +91,7 @@ export const BurgerMenuStyles = {
         width: '30px',
         height: '20px',
         right: '20px',
-        top: '36px'
+        top: '25px'
     },
 
     bmBurgerBars: {
