@@ -16,6 +16,7 @@ export const HomeSection = styled(GlobalSection)`
         background-size: cover;
         background-position: center;
         z-index: -3;
+        opacity: 0.8;
     } 
 
     @media (max-width: 1024px) {
