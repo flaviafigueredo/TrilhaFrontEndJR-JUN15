@@ -9,6 +9,22 @@ export const H2 = styled.h2`
     }
 `
 
+export const Image = styled.img`
+    border-radius: 1rem;
+    float: left;
+    margin-right: 1.5rem;
+    width: 200px;
+    height: auto;
+
+    @media (max-width: 320px) {
+        width: 150px;
+    }
+
+    @media (max-width: 240px) {
+        width: 100px;
+    }
+`
+
 export const Skills = styled.div`
     display: flex;
     flex-direction: column;

@@ -3,8 +3,9 @@ import { faReact, faJsSquare, faCss3Alt, faHtml5, faGithub, faGitAlt } from '@fo
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import '../../transitions.css'
 import { BackgroundAnimation } from '../background-animation/BackgroundAnimation'
-import { H2, IconContainer, Skills, Education, ListItem, Year, Icon, Paragraph, H3, Span } from './styles'
+import { H2, IconContainer, Skills, Education, ListItem, Year, Icon, Paragraph, H3, Span, Image } from './styles'
 import { Section, Title, ColorHighlight, Description } from '../../global-styles'
+import profileImg from '../../assets/profile.jpg'
 
 export const About = () => {
     return (
@@ -14,7 +15,8 @@ export const About = () => {
                 <Title>Sobre <ColorHighlight>mim</ColorHighlight></Title>
 
                 <Description>
-                    <p>
+                    <p> 
+                        <Image src={profileImg} alt="" />
                         Olá, me chamo <ColorHighlight>Flávia Figueredo</ColorHighlight> e tenho 32 anos. Desde muito jovem, nutro uma paixão pela tecnologia. Minha jornada acadêmica iniciou-se com
                         uma formação em <ColorHighlight>Produção Audiovisual</ColorHighlight>, mas meu verdadeiro sonho sempre foi explorar o fascinante
                         mundo da programação. Decidi transformar esse sonho em realidade, embarcando em uma jornada de
